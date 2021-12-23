@@ -1,0 +1,16 @@
+{
+  "name": "discordwebhook",
+  "version": "1.0.0",
+  "description": "Check the status of your AMP server and post updates to a Discord webhook",
+  "main": "DiscordWebhook.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Space0544",
+  "license": "ISC",
+  "dependencies": {
+    "xhr2": "*",
+    "jquery": "*",
+    "jsdom": "*"
+  }
+}
