@@ -1,8 +1,3 @@
-var XMLHttpRequest = require('xhr2');
-const { JSDOM } = require( "jsdom" );
-const { window } = new JSDOM( "" );
-const $ = require( "jquery" )( window );
-
 // Settings
 var instanceid = "83e9181" // Right click instance and open in new tab, copy the ID in the URL
 var server = "ARK" // Server Name
@@ -11,6 +6,12 @@ var panelurl = "https://my.panel.url/" // Panel URL
 var apiusername = "USERNAME" // Username for API user
 var apipassword = "PASSWORD" // Password for API user
 var webhook = "https://discord.com/api/webhooks/12345/12345" // Discord Webhook URL
+
+// Code
+var XMLHttpRequest = require('xhr2');
+const { JSDOM } = require( "jsdom" );
+const { window } = new JSDOM( "" );
+const $ = require( "jquery" )( window );
 
 var loginurl = `${corsproxy}${panelurl}API/ADSModule/Servers/${instanceid}/API/Core/Login`;
 var loginRequest = new XMLHttpRequest();
